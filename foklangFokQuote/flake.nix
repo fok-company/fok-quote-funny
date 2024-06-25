@@ -23,16 +23,17 @@
           buildInputs = [pkgs.rustc pkgs.gcc];
           src = ./src;
           quotes =
-            ["["]
-            ++ (lib.lists.forEach config.quotes (x: "[\"" + toString (builtins.elemAt x 0) + "\" \"" + toString (builtins.elemAt x 1) + "\"]"))
+            ["quotes = ["]
+            ++ (lib.strings.intersperse "`"
+              (lib.lists.forEach config.quotes (x: "(\"" + toString (builtins.elemAt x 0) + "\",\"" + toString (builtins.elemAt x 1) + "\")")))
             ++ ["]"];
           plush =
-            ["["]
-            ++ (lib.lists.forEach config.plush (x: "\"" + toString x + "\""))
+            ["plush = ["]
+            ++ (lib.strings.intersperse "`"
+              (lib.lists.forEach config.plush (x: "\"" + toString x + "\"")))
             ++ ["]"];
-          #quotes = "[[\"test quote\" \"fokfok\"]]";
         } ''
-          export "CONFIG={quotes=$quotes; plush=$plush}" #;$plush"
+          export "CONFIG=$quotes;$plush"
           mkdir -p "$out/bin"
           rustc "$src/fok-quote.rs" -o "$out/bin/fok-quote";
 
