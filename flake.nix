@@ -12,20 +12,26 @@
     nixpkgs,
     flake-utils,
   }:
-    flake-utils.lib.eachDefaultSystem (system: let pkgs=nixpkgs.legacyPackages.${system}; 
-    config = import ./configuration.nix;
-    lib = nixpkgs.lib;
+    flake-utils.lib.eachDefaultSystem (system: let
+      pkgs = nixpkgs.legacyPackages.${system};
+      config = import ./configuration.nix;
+      lib = nixpkgs.lib;
     in {
       formatter = pkgs.alejandra;
       packages.default =
         pkgs.runCommand "fok-quote" {
           buildInputs = [pkgs.rustc pkgs.gcc];
           src = ./src;
-          quotes=["quotes = ["]++(lib.strings.intersperse "`" 
-          (lib.lists.forEach config.quotes (x: "(\""+toString (builtins.elemAt x 0)+"\",\"" + toString (builtins.elemAt x 1) + "\")")))++["]"];
-          plush=["plush = ["]++(lib.strings.intersperse "`"
-          (lib.lists.forEach config.plush (x: "\""+toString x+"\"")))++["]"];
-          
+          quotes =
+            ["quotes = ["]
+            ++ (lib.strings.intersperse "`"
+              (lib.lists.forEach config.quotes (x: "(\"" + toString (builtins.elemAt x 0) + "\",\"" + toString (builtins.elemAt x 1) + "\")")))
+            ++ ["]"];
+          plush =
+            ["plush = ["]
+            ++ (lib.strings.intersperse "`"
+              (lib.lists.forEach config.plush (x: "\"" + toString x + "\"")))
+            ++ ["]"];
         } ''
           export "CONFIG=$quotes;$plush"
           mkdir -p "$out/bin"
