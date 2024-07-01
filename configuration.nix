@@ -13,6 +13,7 @@
     ["Yeah and if we catch you posting stuff without a link/zip folder I will break your legs" "Electric"]
     ["imagine not being white" "Samwich"]
     ["(I wish feet existed ;-;)" "Proto Narrator (bedbug)"]
+    ["NO" "PoolloverNathan (on suggestion about being impure)"]
   ];
   plush = [
     "                              ████████"
