@@ -14,6 +14,7 @@
     ["imagine not being white" "Samwich"]
     ["(I wish feet existed ;-;)" "Proto Narrator (bedbug)"]
     ["NO" "PoolloverNathan (on suggestion about being impure)"]
+    ["Being a [[BIG SHOT]] is fun! I wouldn't know." "TheBunnyMan123 / TheKillerBunny"]
   ];
   plush = [
     "                              ████████"
