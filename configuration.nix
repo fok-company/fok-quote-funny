@@ -15,6 +15,7 @@
     ["(I wish feet existed ;-;)" "Proto Narrator (bedbug)"]
     ["NO" "PoolloverNathan (on suggestion about being impure)"]
     ["Being a [[BIG SHOT]] is fun! I wouldn't know." "TheBunnyMan123 / TheKillerBunny"]
+    ["it's either no d or too much d" "missingnopolaris"]
   ];
   plush = [
     "                              ████████"
