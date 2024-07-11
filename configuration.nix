@@ -16,6 +16,7 @@
     ["NO" "PoolloverNathan (on suggestion about being impure)"]
     ["Being a [[BIG SHOT]] is fun! I wouldn't know." "TheBunnyMan123 / TheKillerBunny"]
     ["it's either no d or too much d" "missingnopolaris"]
+    ["unless you're like me who got uh royally fucked in the ass" ".drown3d"]
   ];
   plush = [
     "                              ████████"
