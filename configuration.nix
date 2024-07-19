@@ -17,6 +17,8 @@
     ["Being a [[BIG SHOT]] is fun! I wouldn't know." "TheBunnyMan123 / TheKillerBunny"]
     ["it's either no d or too much d" "missingnopolaris"]
     ["unless you're like me who got uh royally fucked in the ass" ".drown3d"]
+    ["also for leaving the linux community expect your knees to be broken with a chainsaw within 4 business days" "Hetman Foko"]
+    ["expect your knees to be put under free healthcare with a chainsaw within 5 business days" "Hetman Foko"]
   ];
   plush = [
     "                              ████████"
