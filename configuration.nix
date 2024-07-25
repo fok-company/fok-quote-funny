@@ -19,7 +19,8 @@
     ["unless you're like me who got uh royally fucked in the ass" ".drown3d"]
     ["also for leaving the linux community expect your knees to be broken with a chainsaw within 4 business days" "Hetman Foko"]
     ["expect your knees to be put under free healthcare with a chainsaw within 5 business days" "Hetman Foko"]
-    ["also I am racist" "TheKillerBunny"]
+    ["also I am racist" "TheKillerBunny"]                                     # no context
+    ["also I am racist when it comes to terminal emulators" "TheKillerBunny"] # context
 ];
   plush = [
     "                              ████████"
