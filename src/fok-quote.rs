@@ -89,8 +89,6 @@ fn main() {
 
 
 
-  
-  let mut quote = String::new();
   if args.len()>2 {
     author = args[2].clone()
   }
@@ -114,7 +112,6 @@ fn main() {
       _ => "I bork sequel".to_string()
     };
   }
-  
 
 
 
@@ -127,7 +124,7 @@ fn main() {
     _ => panic!("A")
   };
   for i in plushm {
-    println!("{}",match i.value {foklang::AST::Fructa::Inventarii(i) =>  stringify(i.to_vec()), _ => panic!("a")});
+    println!("{}", format!("{}", match i.value {foklang::AST::Fructa::Inventarii(i) =>  stringify(i.to_vec()), _ => panic!("a")}).replace("esc", "\x1B"));
   }
   println!("{}~ {}",mul_string(" ", /*quote.len() as i32+*/56), author);
   /*if config.get("quotes".to_string()).value.to_list().unwrap().len()-1==last_id as usize{
