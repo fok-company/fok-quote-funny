@@ -28,7 +28,7 @@
             ++ ["]"];
           plush =
             ["["]
-            ++ (lib.lists.forEach config.plush (x: "\"" + toString x + "\""))
+            ++ (lib.lists.forEach (lib.strings.splitString "\n" config.plush) (x: "\"" + toString x + "\""))
             ++ ["]"];
           #quotes = "[[\"test quote\" \"fokfok\"]]";
         } ''
