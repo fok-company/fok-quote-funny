@@ -22,7 +22,6 @@
     ["also I am racist" "TheKillerBunny"]                                     # no context
     ["also I am racist when it comes to terminal emulators" "TheKillerBunny"] # context
     ["I told you we need a #smoking channel" "Lukas"]
-    ["xenophobia is okay when it's the french" "nemmy"]
   ];
   plush = ''
                                   ████████
