@@ -18,7 +18,40 @@
         "type": "github"
       }
     },
+    "foklang": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1728382913,
+        "narHash": "sha256-9dIbvDOTRP6eVjDKtLkKLzLf+XbmRwnNQox2umgTkDc=",
+        "owner": "fokohetman",
+        "repo": "foklang",
+        "rev": "1a902b9bc5b723179d0f1ebcd01f673944ed236f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fokohetman",
+        "repo": "foklang",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
+      "locked": {
+        "lastModified": 1718084892,
+        "narHash": "sha256-3vf//Q9iGKj21qOtP520vy8TYp8dDueWSWeNRZB+R8Y=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "64aff417d17306e1a91d7eb0ee378bc60307c504",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
       "locked": {
         "lastModified": 1721924956,
         "narHash": "sha256-Sb1jlyRO+N8jBXEX9Pg9Z1Qb8Bw9QyOgLDNMEpmjZ2M=",
@@ -37,7 +70,8 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "foklang": "foklang",
+        "nixpkgs": "nixpkgs_2"
       }
     },
     "systems": {
