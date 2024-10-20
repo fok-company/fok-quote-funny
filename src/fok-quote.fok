@@ -1,4 +1,12 @@
-config = load_string $ env "CONFIG";
+#!/usr/bin/env nix-shell
+#!nix-shell -p (builtins.getFlake\"github:fokohetman/foklang\").packages.${builtins.currentSystem}.default -i foklang
+
+
+
+config = PATCH_CONFIG_HERE; 
+#! seriously, patch this
+
+
 
 index = (((toInt $ tail $ split "." globals.os.uptime)) % (length config.quotes))+1; 
 quote = tail $ take index config.quotes;

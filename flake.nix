@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    foklang.url = "github:fokohetman/foklang";
+    #foklang.url = "github:fokohetman/foklang";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
@@ -11,7 +11,7 @@
     self,
     nixpkgs,
     flake-utils,
-    foklang,
+    #foklang,
   }:
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
@@ -21,7 +21,7 @@
       formatter = pkgs.alejandra;
       packages.default =
         pkgs.runCommand "fok-quote" {
-          foklang = foklang.packages.${pkgs.stdenv.hostPlatform.system}.default;
+          #foklang = foklang.packages.${pkgs.stdenv.hostPlatform.system}.default;
           buildInputs = [pkgs.rustc pkgs.gcc];
           src = ./src;
           quotes =
@@ -34,17 +34,18 @@
             #++ ["]"];
           #quotes = "[[\"test quote\" \"fokfok\"]]";
         } ''
-          export CONFIG="{quotes=$quotes; plush=$plush}" #;$plush"
           mkdir -p "$out/bin"
-          #rustc "$src/fok-quote.rs" -o "$out/bin/fok-quote";
 
-          cp $src/fok-quote.fok $out/bin;
-          cp $foklang/bin/foklang $out/bin; 
-          echo "#! /usr/bin/env nix-shell" > $out/bin/fok-quote
-          echo "#! nix-shell -i bash -p bash" >> $out/bin/fok-quote
-          echo "export CONFIG=\"$CONFIG\"" >> $out/bin/fok-quote
-          echo "$out/bin/foklang $out/bin/fok-quote.fok" >> $out/bin/fok-quote
+          cp $src/fok-quote.fok $out/bin/fok-quote;
+
+          substituteInPlace $out/bin/fok-quote \
+          --replace "PATCH_CONFIG_HERE" "{quotes=$quotes; plush=$plush}"
+
           chmod +x $out/bin/fok-quote
         '';
+      postPatch = ''
+      substituteInPlace $out/bin/fok-quote \
+          --replace "PATH_CONFIG_HERE" ""
+      '';
     });
 }
