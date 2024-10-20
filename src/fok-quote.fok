@@ -1,0 +1,40 @@
+config = load_string $ env "CONFIG";
+
+index = (((toInt $ tail $ split "." globals.os.uptime)) % (length config.quotes))+1; 
+quote = tail $ take index config.quotes;
+
+margin = 4;
+
+llen = length $ head quote;
+len = 2*margin + llen;
+
+
+print " ";
+println ['-' | x<-[1..len]];
+
+print "|";
+print [' ' | x<-[1..len]];
+println "|";
+
+print "|";
+print [' ' | x<-[1..margin]];
+print $ head quote;
+print [' ' | x<-[1..margin]];
+println "|";
+
+print "|";
+print [' ' | x<-[1..len]];
+println "|";
+
+print " ";
+println ['-' | x<-[1..len]];
+print [' ' | x<-[1..llen]];
+println "\/";
+
+println config.plush;
+
+
+print [' ' | x<-[1..len]];
+print "~ ";
+println $ tail quote;
+
