@@ -43,9 +43,5 @@
 
           chmod +x $out/bin/fok-quote
         '';
-      postPatch = ''
-      substituteInPlace $out/bin/fok-quote \
-          --replace "PATH_CONFIG_HERE" ""
-      '';
     });
 }
