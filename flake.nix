@@ -28,20 +28,22 @@
             ["["]
             ++ (lib.lists.forEach config.quotes (x: "[\\\"" + toString (builtins.elemAt x 0) + "\\\" \\\"" + toString (builtins.elemAt x 1) + "\\\"]"))
             ++ ["]"];
-          plush = "\\\"" + config.plush + "\\\"";
-            #["["]
-            #++ (lib.lists.forEach (lib.strings.splitString "\n" config.plush) (x: "\\\"" + toString x + "\\\""))
-            #++ ["]"];
+          plush = #"\\\"" + config.plush + "\\\"";
+            ["["]
+            ++ (lib.lists.forEach (lib.strings.splitString "\n" config.plush) (x: "\\\"" + toString x + "\\\""))
+            ++ ["]"];
           #quotes = "[[\"test quote\" \"fokfok\"]]";
         } ''
           mkdir -p "$out/bin"
 
-          cp $src/fok-quote.fok $out/bin/fok-quote;
+          #cp $src/fok-quote.fok $out/bin/fok-quote;
 
-          substituteInPlace $out/bin/fok-quote \
-          --replace "PATCH_CONFIG_HERE" "{quotes=$quotes; plush=$plush}"
+          #substituteInPlace $out/bin/fok-quote \
+          #--replace "PATCH_CONFIG_HERE" "{quotes=$quotes; plush=$plush}"
 
-          chmod +x $out/bin/fok-quote
+          #chmod +x $out/bin/fok-quote
+          export CONFIG="{quotes=$quotes; plush=$plush}"
+          rustc $src/fok-quote.rs -o $out/bin/fok-quote
         '';
     });
 }
