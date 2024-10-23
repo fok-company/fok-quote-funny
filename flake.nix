@@ -26,11 +26,11 @@
           src = ./src;
           quotes =
             ["["]
-            ++ (lib.lists.forEach config.quotes (x: "[\\\"" + toString (builtins.elemAt x 0) + "\\\" \\\"" + toString (builtins.elemAt x 1) + "\\\"]"))
+            ++ (lib.lists.forEach config.quotes (x: "[\"" + toString (builtins.elemAt x 0) + "\" \"" + toString (builtins.elemAt x 1) + "\"]"))
             ++ ["]"];
           plush = #"\\\"" + config.plush + "\\\"";
             ["["]
-            ++ (lib.lists.forEach (lib.strings.splitString "\n" config.plush) (x: "\\\"" + toString x + "\\\""))
+            ++ (lib.lists.forEach (lib.strings.splitString "\n" config.plush) (x: "\"" + toString x + "\""))
             ++ ["]"];
           #quotes = "[[\"test quote\" \"fokfok\"]]";
         } ''
