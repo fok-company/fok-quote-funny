@@ -19,10 +19,37 @@
     ["unless you're like me who got uh royally fucked in the ass" ".drown3d"]
     ["also for leaving the linux community expect your knees to be broken with a chainsaw within 4 business days" "Hetman Foko"]
     ["expect your knees to be put under free healthcare with a chainsaw within 5 business days" "Hetman Foko"]
-    ["also I am racist" "TheKillerBunny"]                                     # no context
+    #["also I am racist" "TheKillerBunny"]                                     # no context
     ["also I am racist when it comes to terminal emulators" "TheKillerBunny"] # context
     ["I told you we need a #smoking channel" "Lukas"]
     ["xenophobia is okay when it's the french" "nemmy"]
+    ["are there any normal people here or are there only americans" "?"]
+    
+    ["pan people are just sideways romanians" "Cheeselover Nathan"]
+    ["there exists a linear transformation that maps pansexual people to romanian people" "Perry"]
+
+    ["im too lazy to turn that into loss, can you do it?" "Perry"]
+    ["right yeah murder is an option" "Slyme"]
+    ["Good you’re looking out for the environment and all but I wanna be pink on your screen." "MxDuck"]
+    ["Imposible, the british don't use spices" "Cheesedust"]
+    ["boob shearing is not something you'll hear that often" "Perry"]
+
+    ["Komodo supports slavery" "Hetman Foko"]
+    ["Hersheys chocolate sucks" "MxDuck"]
+    ["i'll stereographically project you onto a plane, to be cut and opened wide" "Perry"]
+    ["as always, the answer is arson" "Water"]
+    ["why so queerious? i'm the woker, baby" "Jess"]
+    ["Technically, anything is racially motivated if you try hard enough" "OhItsElectric"]
+    ["My palms are in my hands rn" "Total"]
+    ["SHOOT THE CHILD" "Bluecreeper"]
+    ["Yeah you better spit out that cereal. I bet  you put the milk in first too" "Zeke"]
+    ["nil is nil, that much is true. It seems unclear what you are trying to do" "MxDuck"]
+
+    ["it's better to cube on a shit than to shit on the cube" "GNamimates"]
+    ["no orphans allowed in my programming language" "GS"]
+    ["GOD I LOVE BULLYING CHILDREN" "kira"]
+    ["no, just racists.... racers*, RACERS*" "Cheeselover Foko"]
+    ["enough lua for this year, teach me more in 2032" "minecraft:zombie"]
   ];
   plush = ''
                                   ████████
