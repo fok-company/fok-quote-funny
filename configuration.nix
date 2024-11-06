@@ -17,6 +17,7 @@
     ["Hey mate can you boost fascism in Sweden real quick?" "Hetman Foko"]
     ["I am about to quote you hold on" "Hetman Foko"]
     ["I have slaves that will parse http requests for me" "Hetman Foko"]
+	["i thought British curry was supposed to taste watery enough that your navy would feel confident sailing in it" "makgo"]
     ["I told you we need a #smoking channel" "Lukas"]
     ["i'll stereographically project you onto a plane, to be cut and opened wide" "Perry"]
     ["i'm murdering tall mens" "Spingot"]
