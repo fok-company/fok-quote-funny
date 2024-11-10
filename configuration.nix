@@ -25,6 +25,7 @@
     ["im too lazy to turn that into loss, can you do it?" "Perry"]
     ["imagine not being white" "Samwich"]
     ["Imposible, the british don't use spices" "Cheesedust"]
+    ["It's wax, to remind you of your mortality" "EtrasBlade"]
     ["it's better to cube on a shit than to shit on the cube" "GNamimates"]
     ["it's either no d or too much d" "missingnopolaris"]
     ["Komodo supports slavery" "Hetman Foko"]
