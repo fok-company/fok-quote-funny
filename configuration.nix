@@ -9,6 +9,7 @@
     ["Being a [[BIG SHOT]] is fun! I wouldn't know." "TheBunnyMan123 / TheKillerBunny"]
     ["boob shearing is not something you'll hear that often" "Perry"]
     ["Do not microwave room-temperature hamsters" "4P5"]
+    ["everything is \"like that\" if you can stab him correctly" "Hetman Foko"]
     ["enough lua for this year, teach me more in 2032" "minecraft:zombie"]
     ["expect your knees to be put under free healthcare with a chainsaw within 5 business days" "Hetman Foko"]
     ["give me a quote" "Cheeselover Foko"]
