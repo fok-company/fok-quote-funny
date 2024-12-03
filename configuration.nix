@@ -53,7 +53,7 @@
     ["Yeah and if we catch you posting stuff without a link/zip folder I will break your legs" "Electric"]
     ["Yeah you better spit out that cereal. I bet  you put the milk in first too" "Zeke"]
   ];
-  plush = let
+  /*plush = let
     a = "esc[48;2;255;255;255m";
     b = "esc[0m";
   in ''
@@ -70,12 +70,12 @@
             ${a}  ${b}░░  ${a}    ${b}░░░░░░${a}  ${b}  ░░░░          ░░${a}  ${b}
           ${a}  ${b}░░░░░░░░░░░░░░${a}  ${b}  ░░  ░░░░░░░░░░░░${a}  ${b}░░${a}  ${b}
             ${a}  ${b}░░░░${a}        ${b}  ░░  ░░${a}  ${b}░░░░░░${a}    ${b}░░░░░░${a}  ${b}
-              ${a}    ${b}        ${a}        ${b}  ${a}      ${b}    ${a}        ${b}'';
+              ${a}    ${b}        ${a}        ${b}  ${a}      ${b}    ${a}        ${b}'';*/
 
 
   
 
-  /*plush = let 
+  plush = let 
   x = "esc[49m  ";          #reset color
   a = "esc[48;5;231m  ";
   b = "esc[48;5;204m  ";
@@ -115,5 +115,5 @@
                 ${a}                                  ${x}
                     ${a}                              ${x}
                   ${a}                                ${x}
-  '';*/
+  '';
 }
