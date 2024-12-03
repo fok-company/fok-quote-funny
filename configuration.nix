@@ -44,6 +44,7 @@
     ["so um. uh. hellper noises" "Water"]
     ["Technically, anything is racially motivated if you try hard enough" "OhItsElectric"]
     ["there exists a linear transformation that maps pansexual people to romanian people" "Perry"]
+    ["the moose is eating my shoes" "Hope"]
     ["unless you're like me who got uh royally fucked in the ass" ".drown3d"]
     ["What fascism? that's communism my friend! Oh wait no" "Alpaka Mocy"]
     ["why do we have grenades in the tailnet" "Hetman Foko"]
